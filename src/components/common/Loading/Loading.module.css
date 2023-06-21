@@ -1,0 +1,17 @@
+
+
+@media screen and (max-width: 700px) {
+    .imageContainer {
+        padding: 20px 0;
+    }
+
+    .image {
+        height: 50px; width: 50px;
+    }
+}
+
+
+.imageContainer {
+    display: flex; justify-content: center; align-items: center;
+    width: 100%;
+}

@@ -1,0 +1,42 @@
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        height: 500px; width: 100%;
+    }
+
+    .img { height: 60%; width: 100%; }
+
+    .body { height: 40%; padding: 0 20px; }
+    .bodyContainer { padding: 15px 0; }
+    .bodyContainerLeft { gap: 20px; }
+}
+
+
+.container {
+    display: flex; flex-direction: column;
+    justify-content: space-between; align-items: center;
+    background-color: #000;
+    color: #FFFF;
+}
+
+.body {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bodyContainer {
+    display: flex; justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bodyContainerLeft {
+    display: flex; flex-direction: column;
+}
+

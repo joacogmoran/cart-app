@@ -1,0 +1,24 @@
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .containerTxt {
+        height: 50px; width: 100%;
+    }
+
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between; align-items: center;
+}
+
+.containerTxt {
+    display: flex; justify-content: center; align-items: center;
+    background-color: #000;
+    color: #FFFF;
+}

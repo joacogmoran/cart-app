@@ -1,0 +1,16 @@
+
+
+@media screen and (max-width: 700px) {
+    .input {
+        width: 100%; padding: 5px;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.input {
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
