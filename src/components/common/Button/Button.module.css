@@ -7,6 +7,13 @@
     }
 }
 
+@media screen and (min-width: 700px) {
+    .button {
+        height: 35px;
+        padding: 0 12px;
+    }
+}
+
 .button {
     background-color: #0000ff;
     border: none;

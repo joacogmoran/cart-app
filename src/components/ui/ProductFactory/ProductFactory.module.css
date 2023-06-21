@@ -9,6 +9,14 @@
     }
 }
 
+@media screen and (min-width: 700px) {
+    .container {
+        justify-content: space-between; align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
 
 .container {
     display: flex;

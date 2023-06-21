@@ -21,7 +21,7 @@ export default function ProductsPage () {
     
     let [ page, setPage ] = useState(1);
 
-    let itemsPerPage = 9;
+    let itemsPerPage = 10;
     let limit = Math.ceil(products.length / itemsPerPage);
     let lastItem = itemsPerPage * page;
     let firstItem = lastItem - itemsPerPage;
@@ -48,9 +48,10 @@ export default function ProductsPage () {
     return (
         <>
             <Header txt={location}/>
+            <Filters/>
             <SearchBar/>
             <Pagination page={page} limit={limit} pagination={pagination} />
-            <Filters/>
+            
             {
                 loading? <Loading/>
                 : <ProductFactory arr={arr}/>
