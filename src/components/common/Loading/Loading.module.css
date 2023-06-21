@@ -10,6 +10,16 @@
     }
 }
 
+@media screen and (min-width: 700px) {
+    .imageContainer {
+        padding: 20px 0;
+    }
+
+    .image {
+        height: 70px; width: 70px;
+    }
+}
+
 
 .imageContainer {
     display: flex; justify-content: center; align-items: center;
