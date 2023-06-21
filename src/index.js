@@ -1,4 +1,5 @@
 import React from 'react';
+import { createBrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
@@ -6,13 +7,19 @@ import reportWebVitals from './reportWebVitals';
 
 import './App.css'
 import store from './services/app/store';
-import appRoutes from './App';
+import ProductsPage from './components/pages/ProductsPage/ProductsPage';
+import CartPage from './components/pages/CartPage/CartPage';
 
 
-
+const app = createBrowserRouter(
+	[
+		{ path: '/', element: <ProductsPage/> },
+		{ path: '/cart', element: <CartPage/> },
+	]
+);
 createRoot(document.getElementById('root')).render(
 	<Provider store={store}>
-		<RouterProvider router={appRoutes}/>
+		<RouterProvider router={app}/>
 	</Provider>
 );
 
